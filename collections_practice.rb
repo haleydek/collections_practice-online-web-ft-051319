@@ -44,7 +44,7 @@ def sum_array(array)
   i = 0
   array.each do |i|
     sum+=i
-    return sum if i == (array.size - 1)
+    return sum if i == array.size
     i+=1
   end
 end
