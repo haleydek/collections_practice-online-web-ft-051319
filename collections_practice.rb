@@ -51,7 +51,7 @@ end
 
 def add_s(array)
   array.collect do |word|
-    array.find_index(word) == 2 ? word : word
+    array.find_index(word) == 2 ? word : word << "s"
   end
 end
       
