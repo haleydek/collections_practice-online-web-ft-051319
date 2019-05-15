@@ -42,9 +42,9 @@ end
 def sum_array(array)
   sum = 0
   i = 0
-  array.each do |i|
-    sum+=i
-    return sum if (i + 1) == array.size
+  array.each do |num|
+    sum+=num
+    return sum if i == (array.size - 1)
     i+=1
   end
 end
