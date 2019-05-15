@@ -13,7 +13,15 @@ def sort_array_char_count(array)
 end
 
 def swap_elements(array)
-  
-    
+  array.collect do |a|
+    case array.find_index(a)
+      when 1
+        array[2]
+      when 2
+        array[1]
+      else a
+    end
+  end
+end
         
       
