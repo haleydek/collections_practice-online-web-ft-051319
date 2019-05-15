@@ -50,6 +50,8 @@ def sum_array(array)
 end
 
 def add_s(array)
-  
+  array.collect do |word|
+    array.find_index(word) == 2 ? word + "s" : word
+  end
 end
       
